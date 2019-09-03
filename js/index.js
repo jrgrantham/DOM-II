@@ -4,7 +4,7 @@ document.querySelector('.intro img').addEventListener('mouseover', () => {
     event.target.style.width = '400px'
 });
 
-let heading = document.querySelector('h1');
+let heading = document.querySelector('.nav-container');
 document.addEventListener('keydown', () => {
     heading.style.backgroundColor = 'red'
 })
@@ -29,9 +29,9 @@ let scale = 1;
 boat.onwheel = zoom;
 
 
+function adjustOpacity() {
+    document.body.style.opacity = 
+    ((window.innerWidth - 500)/1000)
+}
+window.addEventListener('resize', adjustOpacity);
 
-// let subHeading = document.querySelectorAll('h2');
-// console.log(subHeading);
-// subHeading.addEventListener('keydown', () => {
-//     subHeading.forEach(el => el.style.color = 'red')
-// });
